@@ -12,6 +12,7 @@ config = {
     production: {
         url: 'http://dawnrecorder.com',
         mail: {
+            from: "no-reply@dawnrecorder.com",
             transport: 'SMTP',
             options: {
                 service: 'Mailgun',

@@ -12,6 +12,7 @@ config = {
     production: {
         url: 'http://bonannodeweese.com',
         mail: {
+            from: 'no-reply@bonannodeweese.com',
             transport: 'SMTP',
             options: {
                 service: 'Mailgun',

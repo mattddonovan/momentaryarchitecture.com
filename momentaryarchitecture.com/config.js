@@ -13,6 +13,7 @@ config = {
         url: 'http://momentaryarchitecture.com',
         mail: {
             transport: 'SMTP',
+            from: 'no-reply@momentaryarchitecture.com',
             options: {
                 service: 'Mailgun',
                 auth: {
