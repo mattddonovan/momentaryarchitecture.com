@@ -11,7 +11,16 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://bonannodeweese.com',
-        mail: {},
+        mail: {
+            transport: 'SMTP',
+            options: {
+                service: 'Mailgun',
+                auth: {
+                    user: 'postmaster@mg.momentaryarchitecture.com', // mailgun$
+                    pass: '4cd7da29f68fed9d5e90626d331f187f'  // mailgun passwo$
+                }
+            }
+        },
         database: {
             client: 'sqlite3',
             connection: {
@@ -32,7 +41,7 @@ config = {
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
         // Change this to your Ghost blogs published URL.
-        url: 'http://localhost:2368',
+        url: 'http://localhost:5002',
 
         // Example mail config
         // Visit http://support.ghost.org/mail for instructions
@@ -60,7 +69,7 @@ config = {
             // Host to be passed to node's `net.Server#listen()`
             host: '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: '2368'
+            port: '5002'
         },
         paths: {
             contentPath: path.join(__dirname, '/content/')

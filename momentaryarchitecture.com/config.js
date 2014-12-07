@@ -11,7 +11,16 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://momentaryarchitecture.com',
-        mail: {},
+        mail: {
+            transport: 'SMTP',
+            options: {
+                service: 'Mailgun',
+                auth: {
+                    user: 'postmaster@mg.momentaryarchitecture.com', // mailgun$
+                    pass: '4cd7da29f68fed9d5e90626d331f187f'  // mailgun passwo$
+                }
+            }
+        },
         database: {
             client: 'sqlite3',
             connection: {
