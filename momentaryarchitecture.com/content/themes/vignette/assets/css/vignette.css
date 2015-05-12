@@ -34,7 +34,7 @@
 }
 
 body {
-	font-family: 'Georgia', 'Times New Roman', Times, serif;
+	font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 	line-height: 1.5;
 }
 
@@ -138,9 +138,9 @@ p {
 .content {
     font-size: 16px;
     line-height: 24px;
-    -webkit-columns: 2; /* Chrome, Safari, Opera */
-    -moz-columns: 2; /* Firefox */
-    columns: 2;
+    -webkit-columns: 1; /* Chrome, Safari, Opera */
+    -moz-columns: 1; /* Firefox */
+    columns: 1;
     -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
     -moz-column-gap: 30px; /* Firefox */
     column-gap: 30px;
